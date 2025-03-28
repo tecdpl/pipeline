@@ -101,13 +101,17 @@ python -m pipeline.pipeline -h
 python -m pipeline.pipeline --lang python --project products --steps test,deploy
 ```
 
-Gera os arquivos:
+esse comando vai gerar os arquivos abaixo de forma dinâmica:
 
 ```
 .github/workflows/
 ├── custom.yml   # Contém: build, test, deploy
 └── default.yml  # Contém: build, test, deploy (sempre completo)
 ```
+
+**commit** as alterações e faça **push**. Se você não estiver em uma das 3 branchs principais (main, release, develop) o gatilho do github actions será acionado!
+
+O gatilho para acionar a pipeline em uma das 3 branchs principais (main, release, develop) é **PR (pull request)**
 
 ---
 
@@ -132,4 +136,4 @@ Gera os arquivos:
 
 - A solução do desafio foi totalmente voltada a construção da ferramenta pensando explicitamente em tooling
 - Todos os ajustes feitos nos projetos foram apenas para validar este MVP
-- O desenvolvedo cogitou implantar mais steps, realizar deploy oficial, adicionar flags e integrar a outras ferramentas porém decidiu focar na ferramenta python e mostrar a possibilidade de evolução da ferramenta sem correr o risco de over-engineering para um unico desafio.
+- O desenvolvedor cogitou implantar mais steps, realizar deploy oficial, adicionar flags e integrar a outras ferramentas porém decidiu focar na ferramenta python e mostrar a possibilidade de evolução da ferramenta sem correr o risco de over-engineering para um unico desafio.
