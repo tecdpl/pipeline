@@ -1,0 +1,15 @@
+---
+name: CI Pipeline
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+      - release/**
+
+  workflow_dispatch:
+
+env:
+
+jobs:
