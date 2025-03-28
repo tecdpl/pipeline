@@ -136,4 +136,4 @@ O gatilho para acionar a pipeline em uma das 3 branchs principais (main, release
 
 - A solução do desafio foi totalmente voltada a construção da ferramenta pensando explicitamente em tooling
 - Todos os ajustes feitos nos projetos foram apenas para validar este MVP
-- O desenvolvedo cogitou implantar mais steps, realizar deploy oficial, adicionar flags e integrar a outras ferramentas porém decidiu focar na ferramenta python e mostrar a possibilidade de evolução da ferramenta sem correr o risco de over-engineering para um unico desafio.
+- O desenvolvedor cogitou implantar mais steps, realizar deploy oficial, adicionar flags e integrar a outras ferramentas porém decidiu focar na ferramenta python e mostrar a possibilidade de evolução da ferramenta sem correr o risco de over-engineering para um unico desafio.
