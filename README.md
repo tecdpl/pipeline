@@ -68,8 +68,8 @@ tooling-interview-main/
 
 ## 💡 Filosofia da Ferramenta
 
-- O **desenvolvedor tem liberdade** para montar sua própria pipeline através da CLI usando `custom.yml`.
-- Porém, **toda PR (pull request)** direcionada às branches `main`, `develop` e `release/**` terá como base o `default.yml`, que **contém todos os steps obrigatórios** definidos pela equipe DevOps.
+- O **desenvolvedor tem liberdade** para montar sua própria pipeline por meio da ferramenta CLI usando os comandos e a propria ferramenta personaliza `custom.yml` que será usado para rodar a CI no github Actions pegando o SHA commit em seu **push**.
+- Porém, **toda PR (pull request)** direcionada às branches `main`, `develop` e `release/**` terá como base o `default.yml`, que **contém todos os steps obrigatórios** definidos pela equipe DevOps. Estás 3 branchs só executam por meio de PR.
 - Isso garante flexibilidade no desenvolvimento, mas controle e confiabilidade na integração e entrega contínua.
 
 ---
@@ -124,3 +124,12 @@ Gera os arquivos:
 | 🧪 Testes com matrix         | (futuramente) gerar workflows com `matrix.strategy`                       |
 
 ---
+
+## 📌 Pontos de atenção
+- Os testes podem ser acompanhado na aba actions
+- Clone o projeto e use o comando python -m pipeline.pipeline -h para poder aprender a utilizar
+- Utilize a branch feature/teste para testar ou abra uma PR para uma das 3 principais branchs
+
+- A solução do desafio foi totalmente voltada a construção da ferramenta pensando explicitamente em tooling
+- Todos os ajustes feitos nos projetos foram apenas para validar este MVP
+- O desenvolvedo cogitou implantar mais steps, realizar deploy oficial, adicionar flags e integrar a outras ferramentas porém decidiu focar na ferramenta python e mostrar a possibilidade de evolução da ferramenta sem correr o risco de over-engineering para um unico desafio.
