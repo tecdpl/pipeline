@@ -12,7 +12,7 @@ Ferramenta CLI para geração automatizada de pipelines do GitHub Actions com fo
 - Docker (para os workflows)
 - GitHub Actions configurado
 - Branch protection rule no github (de acordo com as regras do time)
-- Packages permissions no github (para permitir o armazenamento dos containers)
+- Packages permissions no github (para permitir o armazenamento das imagens dos containers)
 
 ---
 
